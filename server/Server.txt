@@ -1,0 +1,2 @@
+Server folder and 
+1) npm init
