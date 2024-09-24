@@ -1,0 +1,36 @@
+Node.js :- Version is use to server creted
+chrome and michroshoft deffent browser in js 
+V8 engin kadhi ne and local send kari c++ add kari.
+
+install node js version node.org
+nodejs :- javascript runtime enviroment.
+version :-  node -v
+version :- npm -v :- npde package manager
+package install karva mate npm use
+
+How to hello word in node js
+1) step :- Hello floder open and js file 
+	run in terminal node hello.js and other node hello
+	node javascript file ne run karse
+	-> npm init :- intilazation use file banavse js file run karva
+	-> {
+  		"name": "hello-word",
+  		"version": "1.0.0",
+  		"main": "hello.js",
+  		"scripts": {
+    		"test": "echo \"Error: no test specified\" && exit 1"
+  		},
+  		"author": "",
+  		"license": "ISC",
+ 		 "description": ""
+		}	
+	-> package.js file :- 
+		secripts :{
+			test : " ",
+			"start":"node hello.js"
+		}
+	-> cmd :- npm start
+
+2) what is module
+	
+
