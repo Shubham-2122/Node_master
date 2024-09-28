@@ -1,0 +1,56 @@
+Url :unifrom resource locator
+
+Basic :- server to url data query pass and check data in database 
+	and match and process
+
+https://www.google.com
+https :- protocol /secrue and not secrure
+      -> server and clinet comunication karne ke liye
+
+www.google.com :- domain:- User Friendly Name of IP Address of my server
+
+//google.com/about?userId=1&a=1 :- query paramerter
+
+url install ;- npm i url
+depedenscie an ma avi jase and delete thei jay fari cmd
+ya to npm install
+localhost:8000/about?myname="shubham" this to run
+console code
+Url {
+  protocol: null,
+  slashes: null,
+  auth: null,
+  host: null,
+  port: null,
+  hostname: null,
+  hash: null,
+  search: '?myname=shubham',
+  query: 'myname=shubham',
+  pathname: '/about',
+  path: '/about?myname=shubham',
+  href: '/about?myname=shubham'
+}
+
+pathname :- check it object pass as data
+const myUrl = url.parse(req.url,true);
+    console.log(myUrl)
+  switch (myUrl.pathname) {
+            case "/": res.end("HomePage");
+                break;
+            case "/about":
+                const qp = res.end("I am shubham jadav");
+                break;
+            default:
+                res.end("404 Not Found")
+        }
+output:-dependcies :{
+	search: '?myname=shubham&userId=1&search=sh',
+  query: [Object: null prototype] {
+    myname: 'shubham',
+    userId: '1',
+    search: 'sh'
+  },
+  pathname: '/about',
+  path: '/about?myname=shubham&userId=1&search=sh',
+  href: '/about?myname=shubham&userId=1&search=sh'
+}
