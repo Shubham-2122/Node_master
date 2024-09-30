@@ -7,10 +7,8 @@ const url =require("url")
 // console.log(http)
 
 
-// webserver creted
-// arrow funtion request mate
-const myServer = http.createServer((req, res) => {
-    // console.log("new Req Rec.");
+function myHandler(req,res){
+     // console.log("new Req Rec.");
     // console.log(req.headers);
     // console.log(req)
 
@@ -19,16 +17,17 @@ const myServer = http.createServer((req, res) => {
 
     if(req.url ===  "/favicon.ico") return res.end();
     // i will log start i will use to log file entery how many time user entry
-    const log = `${Date.now()} : ${req.url} New Req Received\n`;
+    const log = `${Date.now()} : ${req.url} ${req.method} New Req Received\n`;
 
     const myUrl = url.parse(req.url,true);
-    console.log(myUrl)
+    // console.log(myUrl)
     
     fs.appendFile('log.txt', log, (err, data) => {
         // switch case use
         // multi routes to use
         switch (myUrl.pathname) {
-            case "/": res.end("HomePage");
+            case "/":
+               if(req.method == 'GET')  res.end("HomePage");
                 break;
             case "/about":
                 const username = myUrl.query.myname
@@ -38,13 +37,24 @@ const myServer = http.createServer((req, res) => {
                 const search = myUrl.query.search_query;
                 res.end('here are your results for ' + search)
                 break;
+            case "/signup":
+                if(req.method === "GET") res.end("This is a signup Form");
+                else if(req.method === "POST"){
+                    //DB Query
+                    res.end("Successfully...")
+                }
+                break;
             default:
                 res.end("404 Not Found")
         }
         // Switch phela user karva mate
         // res.end("hello From server Again")
-    })
-});
+    });
+}
+
+// webserver creted
+// arrow funtion request mate
+const myServer = http.createServer(myHandler);
 
 // port jarur pade defult pc ma che aamne aetle
 myServer.listen(8000, () => console.log("Serve Started!"));

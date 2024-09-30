@@ -1,0 +1,18 @@
+HTTP GET :- get request
+	-> When you want to get some data from the server.
+
+	inspece :- network and refresh page will gate method
+	Request Method:
+		GET
+
+HTTP POST :- data will change muted
+	-> When you want to send and mutate some data in server.
+	Register page will be post method use.
+	-> post request to server post database to insert
+
+HTTP PUT :-
+	file/img upload karna put use 
+
+HTTP patch :- upadate profile change data
+
+HTTP DELETE :- profile delete use

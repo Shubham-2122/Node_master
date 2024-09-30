@@ -1,13 +1,5 @@
-1727443757793 : / New Req Received
-1727443767041 : /about New Req Received
-1727443801605 : /about?myname=%22shubham%22 New Req Received
-1727443889030 : /about?myname=shubham New Req Received
-1727497679898 : / New Req Received
-1727497706534 : /about New Req Received
-1727497712279 : /about?myname=shubham New Req Received
-1727497788800 : /about?myname=shubham&userId=1 New Req Received
-1727497850350 : /about?myname=shubham&userId=1 New Req Received
-1727497972436 : /about?myname=shubham&userId=1 New Req Received
-1727497990626 : /about?myname=shubham&userId=1&search=sh New Req Received
-1727498155589 : /about?myname=shubham&userId=1&search=sh New Req Received
-1727498371947 : /search?search_query=javascript_tic+tac+toe New Req Received
+1727698174122 : / GET New Req Received
+1727698176834 : / GET New Req Received
+1727698189743 : /about GET New Req Received
+1727698413955 : / GET New Req Received
+1727698425966 : /signup GET New Req Received
