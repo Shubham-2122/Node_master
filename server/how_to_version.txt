@@ -1,0 +1,22 @@
+//varsion 
+4.18.2
+
+1st -> 4 
+-- major release more important to use (almost code break)
+
+2nd -> 18 (citiacal bug) -Feacher add
+-> latest - > 18 - Recomended bug fix (security)
+
+3rd -> 2
+-> minor fixes buges/update(optional)
+
+
+install express = ^4.21.0
+4th version ^4.18.2 4.18.2 -> < 5.0.0
+^4.18.1
+^4.19.0 -> chang kari dese
+
+
+install express = ~4.21.0
+.1 vala hi chnag karna he bas 
+4.19.0 -> change nahi kare 
