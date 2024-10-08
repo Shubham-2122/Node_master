@@ -1,0 +1,21 @@
+REST API - JSON 
+
+Hybrid server
+GET /user - HTML Docment render
+GET /api/user - List all user json (mobile)
+
+GET /user - list all users
+//dynamic routes
+GET api/user/1 - get the user with id 1
+GET /api/user/2 - get the user with id 2
+
+:user to dynamic routes / varibales
+GET /api/users/:id 
+
+POST /api/user - create new user 
+
+PATCH /api/user/id - EDIT the user with id 1
+
+DELETE /api/user/1 - Delete the user with id 1
+
+https://mockaroo.com for no database match :- this time to hard code to use

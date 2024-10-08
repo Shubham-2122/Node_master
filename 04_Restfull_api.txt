@@ -1,0 +1,26 @@
+Restfull-api
+
+
+Rules1->
+Server-> 
+	-server to client comunication
+	-Response send in client(text,img,htmldoc,json)
+	-Server client order	
+	-HTMlDOC -> server side rednering (fast)
+	-JSON -> Key and pair value (raw data)(mobile,Tablets)
+
+client-> Browser,mobile,aelxa
+	client to send server Request
+
+rules2  => always respect all http method
+
+	GET /user - user data read laro and return data
+	post /user :- handle new user creation
+	patch /user :- update to user
+	delete /user :- delete user/remove user
+
+	res.send() res.json(object)
+	res.reder() :- html retrun
+
+server side redering(ssr) :- node
+client side redering(csr) :- react

@@ -1,0 +1,10 @@
+const express = require("express");
+
+const app = express();
+const PORT = 8000;
+
+// Route
+
+app.listen(PORT,()=> console.log(`Server Started at PORT:${PORT}`))
+
+this about bolier plate use with in node and express js
