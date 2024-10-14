@@ -6,7 +6,30 @@ const app = express();
 const PORT = 8000;
 
 // middleware ;-  plugin
-app.use(express.urlencoded({extended:false}))
+// app.use(express.urlencoded({extended:false}));
+// request to object convert to 
+
+// middleware next refe
+app.use((req,res,next)=>{
+    // req hold data
+    // console.log("Hello from middleware 1");
+    // res end kari 
+    // return res.json({msg:"Hello from middleware 1"})
+    fs.appendFile('log.txt',`\n${Date.now()}: ${req.ip} : ${req.method}: ${req.path}\n`,(err,data)=>{
+        next();
+    })
+    // next();
+})
+
+
+// app.use((req,res,next)=>{
+    
+//     console.log("Hello from middleware 2");
+//     // res to the end
+//     // return res.end("hey")
+//     next();
+// })
+
 
 
 
@@ -78,9 +101,6 @@ app.post("/api/users",(req,res)=>{
 //     // TODO : Delete the user with id
 //     return res.json({status:"Pending"})
 // })
-
-
-
 
 
 

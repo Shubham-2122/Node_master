@@ -1,0 +1,19 @@
+user get request send function(block of code)
+
+client request custom middleware(vache koei hovu) 
+middleware (process(hacker,details varifiy)) :- ok aage froware and function
+
+user request galat he to middleware thi stop kari dese
+
+middlware is just function req and response forware and request end bhi kar sakta he
+
+
+Middlware functions are functions that have access to the request object(req),
+the response object(res), and the nexr middleware function in th application's
+reuest-response cycle.
+
+Perfrom can following task in middleware function
+-> Execute any code
+-> Make chnages to the request and the response objects.
+-> End the request-response cycle.
+-> call the next middleware function in the stack.	
