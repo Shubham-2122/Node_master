@@ -49,6 +49,10 @@ app.get("/users",(req,res)=>{
 
 // json data to live view
 app.get("/api/users",(req,res)=>{
+    // http header crete
+    res.setHeader('X-myName','shubham jadav'); //cutom header
+    // always x to custum header 
+    // console.log(req.headers)
     return res.json(users)
 })
 

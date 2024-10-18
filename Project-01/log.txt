@@ -4,3 +4,23 @@
 1728909159137 : POST: /api/users
 
 1728909204371: ::1 : GET: /api/users/1005
+
+1729252130191: ::1 : GET: /
+
+1729252130410: ::1 : GET: /favicon.ico
+
+1729252145294: ::1 : GET: /users
+
+1729252198273: ::1 : GET: /api/users
+
+1729252399420: ::1 : GET: /api/users
+
+1729252535792: ::1 : GET: /api/users
+
+1729252551140: ::1 : GET: /api/users
+
+1729252562257: ::1 : GET: /api/users
+
+1729252649091: ::1 : GET: /api/users
+
+1729252796519: ::1 : POST: /api/users

@@ -1,0 +1,16 @@
+Header 
+mail -> send one friend to another friend.
+mail -> aditional infromation / original data under 
+
+person(server) - > client(user)
+
+Header -> bahar details
+request -> size of data
+
+Header defination :- HTTP Header are important part of the
+	API request and response as they represnt the meta-data
+	associated with the api request and response.
+
+	Headers carry information for the request and Response Body.
+
+
